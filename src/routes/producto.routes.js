@@ -9,7 +9,10 @@ router
   .post(productoCtrl.crearProducto)
   .get(productoCtrl.listarProductos);
 
-router.route('/:id').get(productoCtrl.obtenerProducto).delete(productoCtrl.borrarProducto)
-
+router
+  .route("/:id")
+  .get(productoCtrl.obtenerProducto)
+  .delete(productoCtrl.borrarProducto)
+  .put(productoCtrl.editarProducto);
 
 export default router;
