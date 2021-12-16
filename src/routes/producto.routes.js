@@ -10,4 +10,5 @@ router
   .post(productoCtrl.crearProducto)
   .get(productoCtrl.listarProductos);
 
+
 export default router;
